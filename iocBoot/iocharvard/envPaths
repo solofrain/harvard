@@ -1,0 +1,8 @@
+epicsEnvSet("IOC","iocharvard")
+epicsEnvSet("TOP","/home/liji/data/epics/iocs/pump")
+epicsEnvSet("SUPPORT","/home/liji/data/epics/base-R7.0.4.1/support")
+epicsEnvSet("ASYN","/home/liji/data/epics/base-R7.0.4.1/support/asyn-R4-41")
+epicsEnvSet("STREAM","/home/liji/data/epics/base-R7.0.4.1/support/StreamDevice-2-8-9")
+epicsEnvSet("EPICS_BASE","/home/liji/data/epics/base-R7.0.4.1")
+epicsEnvSet("HARVARD","/home/liji/data/epics/modules/harvard")
+
