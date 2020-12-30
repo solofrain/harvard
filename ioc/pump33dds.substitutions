@@ -1,0 +1,93 @@
+global
+{
+P=XF:28ID2-ES:1,
+Q=Pump:1,
+PORT=L0
+#P=$(P),
+#Q=$(Q),
+#PORT=$(PORT)
+}
+
+file "$(HARVARD)/db/pump33dds-ax.db"
+{
+pattern
+{ AX  }
+{ "A" }
+{ "B" }
+}
+
+#================================================
+
+file "$(HARVARD)/db/pump33dds-cmd.db"
+{
+pattern
+{ AX  , CMD        }
+{ "A" , "CIVOLUME" }
+{ "A" , "CWVOLUME" }
+{ "A" , "IRUN"     }
+{ "A" , "WRUN"     }
+{ "A" , "STOP"     }
+{ "B" , "CIVOLUME" }
+{ "B" , "CWVOLUME" }
+{ "B" , "IRUN"     }
+{ "B" , "WRUN"     }
+{ "B" , "STOP"     }
+}
+
+#================================================
+
+file "$(HARVARD)/db/pump33dds-ax-int.db"
+{
+pattern
+{ AX    , CMD     , EGU }
+{ "A"   , "FORCE" , "%" }
+{ "B"   , "FORCE" , "%" }
+{ "AB"  , "FORCE" , "%" }
+}
+
+#================================================
+
+file "$(HARVARD)/db/pump33dds-ax-rate.db"
+{
+pattern
+{ AX  , CMD      }
+{ "A", "IRATE"   }
+{ "A", "WRATE"   }
+{ "B", "IRATE"   }
+{ "B", "WRATE"   }
+}
+
+#================================================
+
+file "$(HARVARD)/db/pump33dds-ax-vol.db"
+{
+pattern
+{ AX  , CMD      }
+{ "A", "TVOLUME" }
+{ "A", "IVOLUME" }
+{ "A", "WVOLUME" }
+{ "B", "TVOLUME" }
+{ "B", "IVOLUME" }
+{ "B", "WVOLUME" }
+}
+
+#================================================
+
+file "$(HARVARD)/db/pump33dds-ax-time.db"
+{
+pattern
+{ AX  , CMD    }
+{ "A", "TTIME" }
+{ "B", "TTIME" }
+}
+
+#================================================
+
+file "$(HARVARD)/db/pump33dds-ax-status-a.db"
+{
+pattern
+{ CMD      }
+{ "STATUS" }
+}
+
+

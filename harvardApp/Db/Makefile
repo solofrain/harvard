@@ -12,7 +12,15 @@ include $(TOP)/configure/CONFIG
 # templates like this
 #
 #DB += harvardSyringe.template
+DB += pump33dds-cmd.db
 DB += pump33dds-ax.db
+DB += pump33dds-ax-int.db
+#DB += pump33dds-ax-int-egu.db
+DB += pump33dds-ax-float-egu.db
+DB += pump33dds-ax-rate.db
+DB += pump33dds-ax-vol.db
+DB += pump33dds-ax-time.db
+DB += pump33dds-ax-status-a.db
 
 #----------------------------------------------------
 # In a Diamond IOC Application, build db files from
