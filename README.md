@@ -16,5 +16,5 @@ Status:
 
 Reference:
 
-- https://github.com/solofrain/harvard.git
+- https://github.com/dls-controls/harvardSyringe
 - https://github.com/epics-modules/ip
