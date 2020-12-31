@@ -21,11 +21,13 @@ asynSetOption("$(Port)", -1, "crtscts", "N")
 
 dbLoadTemplate("pump33dds.substitutions","P=$(Sys),Q=$(Dev),PORT=$(Port)")
 
-dbLoadRecords("$(ASYN)/db/asynRecord.db", "P=$(Sys), R={$(Dev)}ASYN, PORT=$(Port), ADDR=0, OMAX=80, IMAX=80")
+dbLoadRecords("$(ASYN)/db/asynRecord.db", "P=$(Sys), R={$(Dev)}ASYN, PORT=$(Port), ADDR=0, OMAX=80, IMAX=800")
 #dbLoadRecords("$(IOCSTATS)/db/iocAdminSoft.db","IOC=XF:28ID2-CT{IOC:Pump1}")
 
 var streamError 1
 #var streamDebug 1
+
+asynOctetSetOutputEos("$(Port)",0,"\r\n")
 
 iocInit
 
@@ -33,5 +35,5 @@ dbl > ./records.dbl
 
 dbpf $(Sys){$(Dev)}ASYN.TMSK 9
 dbpf $(Sys){$(Dev)}ASYN.TIOM 2
-dbpf $(Sys){$(Dev)}ASYN.OEOS "\r\n"
+#dbpf $(Sys){$(Dev)}ASYN.OEOS "\r\n"
 dbpf $(Sys){$(Dev)}ASYN.AOUT "RSAVE OFF"

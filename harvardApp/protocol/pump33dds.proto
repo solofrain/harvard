@@ -1,8 +1,7 @@
-#InTerminator = 0x11;
-OutTerminator = CR LF;
+#OutTerminator = CR LF;
 ReplyTimeout = 2000;
-#PollPeriod = 500;
-MaxInput = 0;
+PollPeriod = 500;
+
 
 ax="%(\$1{\$2-Ax:\$3}";
 ax_status = "%(\$1{\$2-Ax:A}:STATUS){:|>|<|*|T|?}%(\$1{\$2-Ax:B}:STATUS){:|>|<|*|T|?}";
@@ -183,50 +182,42 @@ getStatusRateAxA {
 }
 
 getStatusTimeAxA {
-    out "status";
     in "%*d %d %*d %*6c\n%*d %*d %*d %*6c\n" $ax_status;
 }
 
 
 getStatusVolAxA {
-    out "status";
     in "%*d %*d %d %*6c\n%*d %*d %*d %*6c\n" $ax_status;
 }
 
 # Motor direction
-getStatusMdAxA {
-    out "status";
-    in "%*d %*d %*d %c%*5c\n%*d %*d %*d %*6c\n" $ax_status;
+getStatusMtrDirAxA {
+    in "%*d %*d %*d %(\$1{\$2-Ax:A}:MTRDIR:RBV){i|I|w|W}%*5c\n%*d %*d %*d %*6c\n" $ax_status;
 }
 
 # Limit switch status
-getStatusLAxA {
-    out "status";
-    in "%*d %*d %*d %*c%c%*4c\n%*d %*d %*d %*6c\n" $ax_status;
+getStatusLimSwAxA {
+    in "%*d %*d %*d %*c%(\$1{\$2-Ax:A}:LIMSW:RBV){i|I|w|W|.}%*4c\n%*d %*d %*d %*6c\n" $ax_status;
 }
 
 # Stall status
-getStatusSAxA {
-    out "status";
-    in "%*d %*d %*d %*2cc%*3c\n%*d %*d %*d %*6c\n" $ax_status;
+getStatusStallAxA {
+    in "%*d %*d %*d %*2c%(\$1{\$2-Ax:A}:STALL:RBV){S|.}%*3c\n%*d %*d %*d %*6c\n" $ax_status;
 }
 
 # Trigger input state
-getStatusIAxA {
-    out "status";
-    in "%*d %*d %*d %*3c%c%*c%*c\n%*d %*d %*d %*6c\n" $ax_status;
+getStatusTrigInAxA {
+    in "%*d %*d %*d %*3c%(\$1{\$2-Ax:A}:TRIGIN:RBV){T|.}%*2c\n%*d %*d %*d %*6c\n" $ax_status;
 }
 
 # Direction port state
-getStatusDPAxA {
-    out "status";
-    in "%*d %*d %*d %*4c%c%*c\n%*d %*d %*d %*6c\n" $ax_status;
+getStatusDirPortAxA {
+    in "%*d %*d %*d %*4c%(\$1{\$2-Ax:A}:DIRPORT:RBV){I|W}*c\n%*d %*d %*d %*6c\n" $ax_status;
 }
 
 # Target reached status
-getStatusTAxA {
-    out "status";
-    in "%*d %*d %*d %*5c%c\n%*d %*d %*d %*6c\n" $ax_status;
+getStatusTargetAxA {
+    in "%*d %*d %*d %*5c%(\$1{\$2-Ax:A}:TARGET:RBV){T|.}\n%*d %*d %*d %*6c\n" $ax_status;
 }
 
 
@@ -234,55 +225,46 @@ getStatusTAxA {
 # Ax B status.
 #------------------------------------------
 getStatusRateAxB {
-    out "status";
     in "%*d %*d %*d %*6c\n%d %*d %*d %*6c\n" $ax_status;
 }
 
 getStatusTimeAxB {
-    out "status";
     in "%*d %*d %*d %*6c\n%*d %d %*d %*6c\n" $ax_status;
 }
 
 
 getStatusVolAxB {
-    out "status";
     in "%*d %*d %*d %*6c\n%*d %*d %d %*6c\n" $ax_status;
 }
 
 # Motor direction
-getStatusMdAxB {
-    out "status";
-    in "%*d %*d %*d %*6c\n%*d %*d %*d %c%*5c\n" $ax_status;
+getStatusMtrDirAxB {
+    in "%*d %*d %*d %*6c\n%*d %*d %*d %(\$1{\$2-Ax:B}:MTRDIR:RBV){i|I|w|W}%*5c\n" $ax_status;
 }
 
 # Limit switch status
-getStatusLAxB {
-    out "status";
-    in "%*d %*d %*d %*6c\n%*d %*d %*d %*c%c%*4c\n" $ax_status;
+getStatusLimSwAxB {
+    in "%*d %*d %*d %*6c\n%*d %*d %*d %*c%(\$1{\$2-Ax:B}:LIMSW:RBV){i|I|w|W|.}%*4c\n" $ax_status;
 }
 
 # Stall status
-getStatusSAxB {
-    out "status";
-    in "%*d %*d %*d %*6c\n%*d %*d %*d %*2cc%*3c\n" $ax_status;
+getStatusStallAxB {
+    in "%*d %*d %*d %*6c\n%*d %*d %*d %*2c%(\$1{\$2-Ax:B}:STALL:RBV){S|.}%*3c\n" $ax_status;
 }
 
 # Trigger input state
-getStatusIAxB {
-    out "status";
-    in "%*d %*d %*d %*6c\n%*d %*d %*d %*3c%c%*c%*c\n" $ax_status;
+getStatusTrigInAxB {
+    in "%*d %*d %*d %*6c\n%*d %*d %*d %*3c%(\$1{\$2-Ax:B}:TRIGIN:RBV){{T|.}}%*c%*c\n" $ax_status;
 }
 
 # Direction port state
-getStatusDPAxB {
-    out "status";
-    in "%*d %*d %*d %*6c\n%*d %*d %*d %*4c%c%*c\n" $ax_status;
+getStatusDirPortAxB {
+    in "%*d %*d %*d %*6c\n%*d %*d %*d %*4c%(\$1{\$2-Ax:B}:DIRPORT:RBV){I|W}%*c\n" $ax_status;
 }
 
 # Target reached status
-getStatusTAxB {
-    out "status";
-    in "%*d %*d %*d %*6c\n%*d %*d %*d %*5c%c\n" $ax_status;
+getStatusTargetAxB {
+    in "%*d %*d %*d %*6c\n%*d %*d %*d %*5c%(\$1{\$2-Ax:B}:TARGET:RBV){T|.}\n" $ax_status;
 }
 
 
