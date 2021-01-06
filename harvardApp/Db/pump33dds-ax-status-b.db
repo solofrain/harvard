@@ -5,7 +5,7 @@ record(ai, "$(P){$(Q)-Ax:B}:RATE:RBV") {
   field(INP, "@pump33dds.proto getStatusRateAxB($(P), $(Q), $(CMD)) $(PORT)")
   field(PREC, "0")
   field(SCAN, "I/O Intr")
-  #field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
+  field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
 }
 
 
@@ -16,7 +16,7 @@ record(ai, "$(P){$(Q)-Ax:B}:TIME:RBV") {
   field(INP, "@pump33dds.proto getStatusTimeAxB($(P), $(Q), $(CMD)) $(PORT)")
   field(PREC, "0")
   field(SCAN, "I/O Intr")
-  #field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
+  field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
 }
 
 #===================================================
@@ -26,7 +26,7 @@ record(ai, "$(P){$(Q)-Ax:B}:VOL:RBV") {
   field(INP, "@pump33dds.proto getStatusVolAxB($(P), $(Q)) $(PORT)")
   field(PREC, "0")
   field(SCAN, "I/O Intr")
-  #field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
+  field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
 }
 
 
@@ -40,7 +40,7 @@ record(ai, "$(P){$(Q)-Ax:B}:MTRDIR:RBV-RAW") {
   field(INP, "@pump33dds.proto getStatusMtrDirAxB($(P), $(Q)) $(PORT)")
   field(PREC, "0")
   field(SCAN, "I/O Intr")
-  #field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
+  field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
 }
 
 
@@ -65,7 +65,7 @@ record(ai, "$(P){$(Q)-Ax:B}:LIMSW:RBV-RAW") {
   field(INP, "@pump33dds.proto getStatusLimSwAxB($(P), $(Q)) $(PORT)")
   field(PREC, "0")
   field(SCAN, "I/O Intr")
-  #field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
+  field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
 }
 
 
@@ -91,7 +91,7 @@ record(ai, "$(P){$(Q)-Ax:B}:STALL:RBV-RAW") {
   field(INP, "@pump33dds.proto getStatusStallAxB($(P), $(Q)) $(PORT)")
   field(PREC, "0")
   field(SCAN, "I/O Intr")
-  #field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
+  field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
 }
 
  
@@ -109,7 +109,7 @@ record(ai, "$(P){$(Q)-Ax:B}:TRIGIN:RBV-RAW") {
   field(INP, "@pump33dds.proto getStatusTrigInAxB($(P), $(Q)) $(PORT)")
   field(PREC, "0")
   field(SCAN, "I/O Intr")
-  #field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
+  field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
 }
 
  
@@ -127,7 +127,7 @@ record(ai, "$(P){$(Q)-Ax:B}:DIRPORT:RBV-RAW") {
   field(INP, "@pump33dds.proto getStatusDirPortAxB($(P), $(Q)) $(PORT)")
   field(PREC, "0")
   field(SCAN, "I/O Intr")
-  #field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
+  field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
 }
 
 
@@ -146,7 +146,7 @@ record(ai, "$(P){$(Q)-Ax:B}:TARGET:RBV-RAW") {
   field(INP, "@pump33dds.proto getStatusTargetAxB($(P), $(Q)) $(PORT)")
   field(PREC, "0")
   field(SCAN, "I/O Intr")
-  #field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
+  field(SDIS, "$(P){$(Q)-Ax:B}:DISABLE")
 }
 
 

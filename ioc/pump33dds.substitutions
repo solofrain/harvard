@@ -8,6 +8,17 @@ PORT=L0
 #PORT=$(PORT)
 }
 
+#================================================
+
+file "$(HARVARD)/db/pump33dds-cmd.db"
+{
+pattern
+{P}
+{"XF:28ID2-ES:1"}
+}
+
+#================================================
+
 file "$(HARVARD)/db/pump33dds-ax.db"
 {
 pattern
@@ -18,7 +29,7 @@ pattern
 
 #================================================
 
-file "$(HARVARD)/db/pump33dds-cmd.db"
+file "$(HARVARD)/db/pump33dds-ax-cmd.db"
 {
 pattern
 { AX  , CMD        }
@@ -26,11 +37,15 @@ pattern
 { "A" , "CWVOLUME" }
 { "A" , "IRUN"     }
 { "A" , "WRUN"     }
+{ "A" , "RUN"      }
+{ "A" , "RRUN"     }
 { "A" , "STOP"     }
 { "B" , "CIVOLUME" }
 { "B" , "CWVOLUME" }
 { "B" , "IRUN"     }
 { "B" , "WRUN"     }
+{ "B" , "RUN"      }
+{ "B" , "RRUN"     }
 { "B" , "STOP"     }
 }
 
@@ -62,13 +77,16 @@ pattern
 file "$(HARVARD)/db/pump33dds-ax-vol.db"
 {
 pattern
-{ AX  , CMD      }
-{ "A", "TVOLUME" }
-{ "A", "IVOLUME" }
-{ "A", "WVOLUME" }
-{ "B", "TVOLUME" }
-{ "B", "IVOLUME" }
-{ "B", "WVOLUME" }
+{ AX  , CMD       }
+{ "A" , "TVOLUME" }
+{ "A" , "IVOLUME" }
+{ "A" , "WVOLUME" }
+{ "B" , "TVOLUME" }
+{ "B" , "IVOLUME" }
+{ "B" , "WVOLUME" }
+{ "AB", "TVOLUME" }
+{ "AB", "IVOLUME" }
+{ "AB", "WVOLUME" }
 }
 
 #================================================
@@ -84,6 +102,15 @@ pattern
 #================================================
 
 file "$(HARVARD)/db/pump33dds-ax-status-a.db"
+{
+pattern
+{ CMD      }
+{ "STATUS" }
+}
+
+#================================================
+
+file "$(HARVARD)/db/pump33dds-ax-status-b.db"
 {
 pattern
 { CMD      }

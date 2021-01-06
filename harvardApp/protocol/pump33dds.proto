@@ -9,6 +9,19 @@ ax_status = "%(\$1{\$2-Ax:A}:STATUS){:|>|<|*|T|?}%(\$1{\$2-Ax:B}:STATUS){:|>|<|*
 
 
 #==========================================
+# Set pump condition.
+setCond {
+    out "condition %c";
+    in $ax_status;
+}
+
+getCond {
+    out "condition";
+    in  "%(\$1{\$2}:CONDITION:RBV){Twin|Reciprocating|Independent}";
+}
+
+
+#==========================================
 #
 # Execute a command and receive status.
 #
@@ -107,7 +120,7 @@ setRateMinMaxAx {
 # Get rate.
 #------------------------------------------
 getRateAx {
-	out "STATUS";
+	out "\$4 \$3";
 	in "\$3: %f %(\$1{\$2-Ax:\$3}:\$4:RBV:EGU){pl/sec|pl/min|pl/hr|nl/sec|nl/min|nl/hr|ul/sec|ul/min|ul/hr|ml/sec|ml/min|ml/hr}\n%" $ax_status;
 #	@init { getRateAx; }
 }
@@ -131,14 +144,27 @@ setVolAx {
     in $ax_status;
 }
 
+setVol {
+    out "\$3 %f %(\$1{\$2}:\$3:EGU){pl|nl|ul|ml}";
+    in $ax_status;
+}
+
 
 
 #------------------------------------------
 # Get volume.
 #------------------------------------------
 getVolAx {
-	out "\$4 \$3";
-	in "\$3: %f %(\$1{\$2-Ax:\$3}:\$4:RBV:EGU){pl|nl|ul|ml}\n%" $ax_status;
+    out "\$4 \$3";
+    in "\$3: %f %(\$1{\$2-Ax:\$3}:\$4:RBV:EGU){pl|nl|ul|ml}\n" $ax_status;
+    @mismatch {
+        in "A: %f %(\$1{\$2-Ax:A}:\$4:RBV:EGU){pl|nl|ul|ml}\nB: %f %(\$1{\$2-Ax:B}:\$4:RBV:EGU){pl|nl|ul|ml}\n%" $ax_status;
+    }
+}
+
+getVol {
+    out "\$3";
+    in "%f %(\$1{\$2}:\$3:RBV:EGU){pl|nl|ul|ml}\n%" $ax_status;
 }
 
 

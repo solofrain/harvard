@@ -37,3 +37,4 @@ dbpf $(Sys){$(Dev)}ASYN.TMSK 9
 dbpf $(Sys){$(Dev)}ASYN.TIOM 2
 #dbpf $(Sys){$(Dev)}ASYN.OEOS "\r\n"
 dbpf $(Sys){$(Dev)}ASYN.AOUT "RSAVE OFF"
+dbpf $(Sys){$(Dev)}:DISABLE 0

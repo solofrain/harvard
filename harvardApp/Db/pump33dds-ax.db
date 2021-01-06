@@ -15,6 +15,6 @@ record(mbbi, "$(P){$(Q)-Ax:$(AX)}:STATUS") {
   field(FRST, "Target Reached")
   field(FVVL, "5")
   field(FVST, "Unknown")
-#  field(SDIS, "$(P){$(Q)-Ax:$(AX)}:DISABLE")
+  field(SDIS, "$(P){$(Q)}:DISABLE")
 }
 

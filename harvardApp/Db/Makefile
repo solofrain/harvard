@@ -13,10 +13,11 @@ include $(TOP)/configure/CONFIG
 #
 #DB += harvardSyringe.template
 DB += pump33dds-cmd.db
+DB += pump33dds-ax-cmd.db
 DB += pump33dds-ax.db
 DB += pump33dds-ax-int.db
 #DB += pump33dds-ax-int-egu.db
-DB += pump33dds-ax-float-egu.db
+#DB += pump33dds-ax-float-egu.db
 DB += pump33dds-ax-rate.db
 DB += pump33dds-ax-vol.db
 DB += pump33dds-ax-time.db
