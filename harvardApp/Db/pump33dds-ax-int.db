@@ -1,31 +1,32 @@
-record(ao, "$(P){$(Q)-Ax:$(AX)}:$(CMD)") {
+record(ao, "$(P){$(Q)-Ax:$(AX)}$(CMD)") {
   field(DESC, "Axis $(AX) $(CMD)")
   field(DTYP, "stream")
-  field(FLNK, "$(P){$(Q)-Ax:$(AX)}:$(CMD):RBV")
+  field(FLNK, "$(P){$(Q)-Ax:$(AX)}$(CMD):RBV")
   field(OUT, "@pump33dds.proto setIntAx($(P), $(Q), $(AX), $(CMD)) $(PORT)")
   field(PREC, "0")
   field(EGU, "$(EGU)")
   field(DRVH, "100")
   field(DRVL, "0")
-  field(SDIS, "$(P){$(Q)}:DISABLE")
+  field(SDIS, "$(P){$(Q)}DISABLE")
+  info(autosaveFields_pass0, "VAL")
 }
 
-record(ai, "$(P){$(Q)-Ax:$(AX)}:$(CMD):RBV") {
+record(ai, "$(P){$(Q)-Ax:$(AX)}$(CMD):RBV") {
   field(DESC, "Axis $(AX) $(CMD) readback")
   field(DTYP, "stream")
   field(INP, "@pump33dds.proto getIntEGUAx($(P), $(Q), $(AX), $(CMD), $(EGU)) $(PORT)")
   field(PREC, "0")
   field(EGU, "$(EGU)")
-  field(SDIS, "$(P){$(Q)}:DISABLE")
+  field(SDIS, "$(P){$(Q)}DISABLE")
 }
 
 
-record(mbbi, "$(P){$(Q)-Ax:$(AX)}:$(CMD):RBV:EGU") {
+record(mbbi, "$(P){$(Q)-Ax:$(AX)}$(CMD):RBV:EGU") {
   #field(DESC, "Pump Status")
   field(ZRVL, "0")
   field(ZRST, "$(EGU)")
   field(ONVL, "1")
   field(ONST, "Invalid")
-  field(SDIS, "$(P){$(Q)}:DISABLE")
+  field(SDIS, "$(P){$(Q)}DISABLE")
 }
 

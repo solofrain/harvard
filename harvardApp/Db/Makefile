@@ -21,8 +21,9 @@ DB += pump33dds-ax-int.db
 DB += pump33dds-ax-rate.db
 DB += pump33dds-ax-vol.db
 DB += pump33dds-ax-time.db
-DB += pump33dds-ax-status-a.db
-DB += pump33dds-ax-status-b.db
+DB += pump33dds-ax-status.db
+#DB += pump33dds-ax-status-a.db
+#DB += pump33dds-ax-status-b.db
 
 #----------------------------------------------------
 # In a Diamond IOC Application, build db files from

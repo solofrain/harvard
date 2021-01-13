@@ -20,6 +20,7 @@ harvard_DBD += stream.dbd
 harvard_DBD += drvAsynSerialPort.dbd
 #harvard_DBD += devIocStats.dbd
 #harvard_DBD += iocAdmin.dbd
+harvard_DBD += asSupport.dbd
 
 # Include dbd files from all support applications:
 #harvard_DBD += xxx.dbd
@@ -27,7 +28,7 @@ harvard_DBD += drvAsynSerialPort.dbd
 # Add all the support libraries needed by this IOC
 harvard_LIBS += asyn calc
 harvard_LIBS += stream 
-
+harvard_LIBS += autosave
 #harvard_LIBS += devIocStats
 
 # harvard_registerRecordDeviceDriver.cpp derives from harvard.dbd

@@ -101,7 +101,7 @@ pattern
 
 #================================================
 
-file "$(HARVARD)/db/pump33dds-ax-status-a.db"
+file "$(HARVARD)/db/pump33dds-ax-status.db"
 {
 pattern
 { CMD      }
@@ -109,12 +109,12 @@ pattern
 }
 
 #================================================
-
-file "$(HARVARD)/db/pump33dds-ax-status-b.db"
-{
-pattern
-{ CMD      }
-{ "STATUS" }
-}
+#
+#file "$(HARVARD)/db/pump33dds-ax-status-b.db"
+#{
+#pattern
+#{ CMD      }
+#{ "STATUS" }
+#}
 
 

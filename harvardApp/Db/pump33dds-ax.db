@@ -1,7 +1,7 @@
 #====================================================
 # Ax status
 
-record(mbbi, "$(P){$(Q)-Ax:$(AX)}:STATUS") {
+record(mbbi, "$(P){$(Q)-Ax:$(AX)}STATUS") {
   field(DESC, "Pump Status")
   field(ZRVL, "0")
   field(ZRST, "Idle")
@@ -15,6 +15,6 @@ record(mbbi, "$(P){$(Q)-Ax:$(AX)}:STATUS") {
   field(FRST, "Target Reached")
   field(FVVL, "5")
   field(FVST, "Unknown")
-  field(SDIS, "$(P){$(Q)}:DISABLE")
+  field(SDIS, "$(P){$(Q)}DISABLE")
 }
 

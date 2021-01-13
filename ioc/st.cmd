@@ -8,6 +8,9 @@ epicsEnvSet("Dev", "Pump:1")
 epicsEnvSet("Port", "L0")
 epicsEnvSet("STREAM_PROTOCOL_PATH", "$(HARVARD)/harvardApp/protocol/")
 
+export EPICS_CA_ADDR_LIST=192.168.1.255
+export EPICS_CA_AUTO_ADDR_LIST=NO
+
 dbLoadDatabase "$(HARVARD)/dbd/harvard.dbd"
 harvard_registerRecordDeviceDriver pdbbase
 
@@ -29,12 +32,30 @@ var streamError 1
 
 asynOctetSetOutputEos("$(Port)",0,"\r\n")
 
+
+## autosave/restore machinery
+save_restoreSet_Debug(0)
+save_restoreSet_IncompleteSetsOk(1)
+save_restoreSet_DatedBackupFiles(1)
+
+set_savefile_path("${TOP}/as","/save")
+set_requestfile_path("${TOP}/as","/req")
+
+set_pass0_restoreFile("info_positions.sav")
+
+
 iocInit
 
+cd ${TOP}/as/req
+makeAutosaveFiles()
+create_monitor_set("info_positions.req", 5 , "")
+
 dbl > ./records.dbl
+
+dbpf $(Sys){$(Dev)}ASYN.AOUT "RSAVE OFF"
 
 dbpf $(Sys){$(Dev)}ASYN.TMSK 9
 dbpf $(Sys){$(Dev)}ASYN.TIOM 2
 #dbpf $(Sys){$(Dev)}ASYN.OEOS "\r\n"
-dbpf $(Sys){$(Dev)}ASYN.AOUT "RSAVE OFF"
-dbpf $(Sys){$(Dev)}:DISABLE 0
+
+dbpf $(Sys){$(Dev)}DISABLE 0

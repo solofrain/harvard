@@ -30,7 +30,7 @@
   <snap_to_geometry>true</snap_to_geometry>
   <widget_type>Display</widget_type>
   <width>655</width>
-  <wuid>-4433d09:175bcf56be3:-5b8e</wuid>
+  <wuid>-4433d09175bcf56be3-5b8e</wuid>
   <x>0</x>
   <y>0</y>
   <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
@@ -87,7 +87,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Rectangle</widget_type>
     <width>655</width>
-    <wuid>712a0ba6:176b5a1ea7d:-64e3</wuid>
+    <wuid>712a0ba6176b5a1ea7d-64e3</wuid>
     <x>0</x>
     <y>0</y>
   </widget>
@@ -145,7 +145,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Rectangle</widget_type>
     <width>655</width>
-    <wuid>38913791:17624c3a0cc:-654c</wuid>
+    <wuid>3891379117624c3a0cc-654c</wuid>
     <x>0</x>
     <y>305</y>
   </widget>
@@ -203,7 +203,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Rectangle</widget_type>
     <width>655</width>
-    <wuid>38913791:17624c3a0cc:-654b</wuid>
+    <wuid>3891379117624c3a0cc-654b</wuid>
     <x>0</x>
     <y>415</y>
   </widget>
@@ -227,7 +227,7 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96" />
+      <color name="Monitor FG" red="96" green="255" blue="96" />
     </foreground_color>
     <format_type>0</format_type>
     <height>76</height>
@@ -235,7 +235,7 @@ $(pv_value)</tooltip>
     <name>auto(readback|Status)</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>$(P)$(Q):STATUS</pv_name>
+    <pv_name>$(P)$(Q)STATUS</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -255,7 +255,7 @@ $(pv_value)</tooltip>
     <widget_type>Text Update</widget_type>
     <width>655</width>
     <wrap_words>false</wrap_words>
-    <wuid>38913791:17624c3a0cc:-654a</wuid>
+    <wuid>3891379117624c3a0cc-654a</wuid>
     <x>0</x>
     <y>0</y>
   </widget>
@@ -286,13 +286,13 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0" />
+      <color name="Text FG" red="0" green="0" blue="0" />
     </foreground_color>
     <height>69</height>
     <image></image>
     <name>auto(command|Stop)</name>
     <push_action_index>0</push_action_index>
-    <pv_name>$(P)$(Q):STOP</pv_name>
+    <pv_name>$(P)$(Q)STOP</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -309,7 +309,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
-    <wuid>38913791:17624c3a0cc:-6549</wuid>
+    <wuid>3891379117624c3a0cc-6549</wuid>
     <x>504</x>
     <y>320</y>
   </widget>
@@ -340,13 +340,13 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0" />
+      <color name="Text FG" red="0" green="0" blue="0" />
     </foreground_color>
     <height>30</height>
     <image></image>
     <name>auto(command|Withdraw)</name>
     <push_action_index>0</push_action_index>
-    <pv_name>$(P)$(Q):WRUN</pv_name>
+    <pv_name>$(P)$(Q)WRUN</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -363,7 +363,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
-    <wuid>38913791:17624c3a0cc:-6548</wuid>
+    <wuid>3891379117624c3a0cc-6548</wuid>
     <x>345</x>
     <y>320</y>
   </widget>
@@ -394,13 +394,13 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0" />
+      <color name="Text FG" red="0" green="0" blue="0" />
     </foreground_color>
     <height>30</height>
     <image></image>
     <name>auto(command|Infuse)</name>
     <push_action_index>0</push_action_index>
-    <pv_name>$(P)$(Q):IRUN</pv_name>
+    <pv_name>$(P)$(Q)IRUN</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -417,7 +417,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
-    <wuid>38913791:17624c3a0cc:-6547</wuid>
+    <wuid>3891379117624c3a0cc-6547</wuid>
     <x>187</x>
     <y>320</y>
   </widget>
@@ -457,7 +457,7 @@ $(pv_value)</tooltip>
     <widget_type>Label</widget_type>
     <width>140</width>
     <wrap_words>false</wrap_words>
-    <wuid>38913791:17624c3a0cc:-6542</wuid>
+    <wuid>3891379117624c3a0cc-6542</wuid>
     <x>28</x>
     <y>338</y>
   </widget>
@@ -497,7 +497,7 @@ $(pv_value)</tooltip>
     <widget_type>Label</widget_type>
     <width>140</width>
     <wrap_words>false</wrap_words>
-    <wuid>38913791:17624c3a0cc:-653c</wuid>
+    <wuid>3891379117624c3a0cc-653c</wuid>
     <x>28</x>
     <y>801</y>
   </widget>
@@ -537,7 +537,7 @@ $(pv_value)</tooltip>
     <widget_type>Label</widget_type>
     <width>140</width>
     <wrap_words>false</wrap_words>
-    <wuid>38913791:17624c3a0cc:-653b</wuid>
+    <wuid>3891379117624c3a0cc-653b</wuid>
     <x>28</x>
     <y>851</y>
   </widget>
@@ -562,7 +562,7 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Controller: FG" red="0" green="0" blue="192" />
+      <color name="Controller FG" red="0" green="0" blue="192" />
     </foreground_color>
     <format_type>0</format_type>
     <height>30</height>
@@ -574,7 +574,7 @@ $(pv_value)</tooltip>
     <name>auto(demand|Target Time)</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>$(P)$(Q):TTIME</pv_name>
+    <pv_name>$(P)$(Q)TTIME</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -594,7 +594,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Text Input</widget_type>
     <width>200</width>
-    <wuid>38913791:17624c3a0cc:-6524</wuid>
+    <wuid>3891379117624c3a0cc-6524</wuid>
     <x>187</x>
     <y>801</y>
   </widget>
@@ -618,7 +618,7 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96" />
+      <color name="Monitor FG" red="96" green="255" blue="96" />
     </foreground_color>
     <format_type>0</format_type>
     <height>30</height>
@@ -626,7 +626,7 @@ $(pv_value)</tooltip>
     <name>auto(readback|Target Time)</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>$(P)$(Q):TTIME:RBV</pv_name>
+    <pv_name>$(P)$(Q)TTIME:RBV</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -646,7 +646,7 @@ $(pv_value)</tooltip>
     <widget_type>Text Update</widget_type>
     <width>200</width>
     <wrap_words>false</wrap_words>
-    <wuid>38913791:17624c3a0cc:-6523</wuid>
+    <wuid>3891379117624c3a0cc-6523</wuid>
     <x>422</x>
     <y>801</y>
   </widget>
@@ -671,7 +671,7 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Controller: FG" red="0" green="0" blue="192" />
+      <color name="Controller FG" red="0" green="0" blue="192" />
     </foreground_color>
     <format_type>0</format_type>
     <height>30</height>
@@ -683,7 +683,7 @@ $(pv_value)</tooltip>
     <name>auto(demand|Force)</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>$(P)$(Q):FORCE</pv_name>
+    <pv_name>$(P)$(Q)FORCE</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -703,7 +703,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Text Input</widget_type>
     <width>200</width>
-    <wuid>38913791:17624c3a0cc:-6522</wuid>
+    <wuid>3891379117624c3a0cc-6522</wuid>
     <x>187</x>
     <y>851</y>
   </widget>
@@ -727,7 +727,7 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96" />
+      <color name="Monitor FG" red="96" green="255" blue="96" />
     </foreground_color>
     <format_type>0</format_type>
     <height>30</height>
@@ -735,7 +735,7 @@ $(pv_value)</tooltip>
     <name>auto(readback|Force)</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>$(P)$(Q):FORCE:RBV</pv_name>
+    <pv_name>$(P)$(Q)FORCE:RBV</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -755,7 +755,7 @@ $(pv_value)</tooltip>
     <widget_type>Text Update</widget_type>
     <width>200</width>
     <wrap_words>false</wrap_words>
-    <wuid>38913791:17624c3a0cc:-6521</wuid>
+    <wuid>3891379117624c3a0cc-6521</wuid>
     <x>422</x>
     <y>851</y>
   </widget>
@@ -797,7 +797,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
     <width>618</width>
-    <wuid>-59e92385:1768b1ba2dc:-7c7e</wuid>
+    <wuid>-59e923851768b1ba2dc-7c7e</wuid>
     <x>19</x>
     <y>580</y>
   </widget>
@@ -839,7 +839,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
     <width>618</width>
-    <wuid>-59e92385:1768b1ba2dc:-7a1f</wuid>
+    <wuid>-59e923851768b1ba2dc-7a1f</wuid>
     <x>19</x>
     <y>687</y>
   </widget>
@@ -881,7 +881,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
     <width>611</width>
-    <wuid>-59e92385:1768b1ba2dc:-7718</wuid>
+    <wuid>-59e923851768b1ba2dc-7718</wuid>
     <x>19</x>
     <y>431</y>
   </widget>
@@ -908,7 +908,7 @@ $(pv_value)</tooltip>
       <include_parent_macros>true</include_parent_macros>
       <DIR>Infused</DIR>
       <VOL>IVOLUME</VOL>
-      <CMD>CIVOLUME</CMD>
+      <CMD>IVOLUME</CMD>
     </macros>
     <name>Linking Container_3</name>
     <opi_file>pump33dds-ax-done-vol.opi</opi_file>
@@ -924,7 +924,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
     <width>611</width>
-    <wuid>-59e92385:1768b1ba2dc:-758c</wuid>
+    <wuid>-59e923851768b1ba2dc-758c</wuid>
     <x>19</x>
     <y>481</y>
   </widget>
@@ -950,7 +950,7 @@ $(pv_value)</tooltip>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <DIR>Withdrawn</DIR>
-      <CMD>CWVOLUME</CMD>
+      <CMD>WVOLUME</CMD>
       <VOL>WVOLUME</VOL>
     </macros>
     <name>Linking Container_4</name>
@@ -967,7 +967,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
     <width>611</width>
-    <wuid>-59e92385:1768b1ba2dc:-7573</wuid>
+    <wuid>-59e923851768b1ba2dc-7573</wuid>
     <x>19</x>
     <y>525</y>
   </widget>
@@ -991,7 +991,7 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96" />
+      <color name="Monitor FG" red="96" green="255" blue="96" />
     </foreground_color>
     <format_type>0</format_type>
     <height>30</height>
@@ -999,7 +999,7 @@ $(pv_value)</tooltip>
     <name>Text Update</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>$(P)$(Q):RATE:RBV</pv_name>
+    <pv_name>$(P)$(Q)RATE:RBV</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -1019,7 +1019,7 @@ $(pv_value)</tooltip>
     <widget_type>Text Update</widget_type>
     <width>180</width>
     <wrap_words>false</wrap_words>
-    <wuid>-3fdb36f:1769542d8fb:-7ef9</wuid>
+    <wuid>-3fdb36f1769542d8fb-7ef9</wuid>
     <x>32</x>
     <y>105</y>
   </widget>
@@ -1059,7 +1059,7 @@ $(pv_value)</tooltip>
     <widget_type>Label</widget_type>
     <width>140</width>
     <wrap_words>false</wrap_words>
-    <wuid>-6631d643:176b544ef19:-7d94</wuid>
+    <wuid>-6631d643176b544ef19-7d94</wuid>
     <x>32</x>
     <y>86</y>
   </widget>
@@ -1083,7 +1083,7 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96" />
+      <color name="Monitor FG" red="96" green="255" blue="96" />
     </foreground_color>
     <format_type>0</format_type>
     <height>30</height>
@@ -1091,7 +1091,7 @@ $(pv_value)</tooltip>
     <name>Text Update_1</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>$(P)$(Q):TIME:RBV</pv_name>
+    <pv_name>$(P)$(Q)TIME:RBV</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -1111,7 +1111,7 @@ $(pv_value)</tooltip>
     <widget_type>Text Update</widget_type>
     <width>180</width>
     <wrap_words>false</wrap_words>
-    <wuid>-6631d643:176b544ef19:-7c69</wuid>
+    <wuid>-6631d643176b544ef19-7c69</wuid>
     <x>238</x>
     <y>105</y>
   </widget>
@@ -1151,7 +1151,7 @@ $(pv_value)</tooltip>
     <widget_type>Label</widget_type>
     <width>140</width>
     <wrap_words>false</wrap_words>
-    <wuid>-6631d643:176b544ef19:-7c68</wuid>
+    <wuid>-6631d643176b544ef19-7c68</wuid>
     <x>238</x>
     <y>86</y>
   </widget>
@@ -1175,7 +1175,7 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96" />
+      <color name="Monitor FG" red="96" green="255" blue="96" />
     </foreground_color>
     <format_type>0</format_type>
     <height>30</height>
@@ -1183,7 +1183,7 @@ $(pv_value)</tooltip>
     <name>Text Update_2</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>$(P)$(Q):VOL:RBV</pv_name>
+    <pv_name>$(P)$(Q)VOL:RBV</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -1203,7 +1203,7 @@ $(pv_value)</tooltip>
     <widget_type>Text Update</widget_type>
     <width>180</width>
     <wrap_words>false</wrap_words>
-    <wuid>-c5f9252:176b5a0df43:-7fb5</wuid>
+    <wuid>-c5f9252176b5a0df43-7fb5</wuid>
     <x>445</x>
     <y>105</y>
   </widget>
@@ -1243,7 +1243,7 @@ $(pv_value)</tooltip>
     <widget_type>Label</widget_type>
     <width>140</width>
     <wrap_words>false</wrap_words>
-    <wuid>-c5f9252:176b5a0df43:-7fb4</wuid>
+    <wuid>-c5f9252176b5a0df43-7fb4</wuid>
     <x>445</x>
     <y>86</y>
   </widget>
@@ -1267,7 +1267,7 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96" />
+      <color name="Monitor FG" red="96" green="255" blue="96" />
     </foreground_color>
     <format_type>0</format_type>
     <height>30</height>
@@ -1275,7 +1275,7 @@ $(pv_value)</tooltip>
     <name>Text Update_3</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>$(P)$(Q):MTRDIR:RBV</pv_name>
+    <pv_name>$(P)$(Q)MTRDIR:RBV</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -1295,7 +1295,7 @@ $(pv_value)</tooltip>
     <widget_type>Text Update</widget_type>
     <width>180</width>
     <wrap_words>false</wrap_words>
-    <wuid>712a0ba6:176b5a1ea7d:-79c7</wuid>
+    <wuid>712a0ba6176b5a1ea7d-79c7</wuid>
     <x>32</x>
     <y>170</y>
   </widget>
@@ -1335,7 +1335,7 @@ $(pv_value)</tooltip>
     <widget_type>Label</widget_type>
     <width>140</width>
     <wrap_words>false</wrap_words>
-    <wuid>712a0ba6:176b5a1ea7d:-79c6</wuid>
+    <wuid>712a0ba6176b5a1ea7d-79c6</wuid>
     <x>32</x>
     <y>151</y>
   </widget>
@@ -1359,7 +1359,7 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96" />
+      <color name="Monitor FG" red="96" green="255" blue="96" />
     </foreground_color>
     <format_type>0</format_type>
     <height>30</height>
@@ -1367,7 +1367,7 @@ $(pv_value)</tooltip>
     <name>Text Update_4</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>$(P)$(Q):LIMSW:RBV</pv_name>
+    <pv_name>$(P)$(Q)LIMSW:RBV</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -1387,7 +1387,7 @@ $(pv_value)</tooltip>
     <widget_type>Text Update</widget_type>
     <width>180</width>
     <wrap_words>false</wrap_words>
-    <wuid>712a0ba6:176b5a1ea7d:-78d3</wuid>
+    <wuid>712a0ba6176b5a1ea7d-78d3</wuid>
     <x>238</x>
     <y>170</y>
   </widget>
@@ -1427,7 +1427,7 @@ $(pv_value)</tooltip>
     <widget_type>Label</widget_type>
     <width>140</width>
     <wrap_words>false</wrap_words>
-    <wuid>712a0ba6:176b5a1ea7d:-78d2</wuid>
+    <wuid>712a0ba6176b5a1ea7d-78d2</wuid>
     <x>238</x>
     <y>151</y>
   </widget>
@@ -1451,7 +1451,7 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96" />
+      <color name="Monitor FG" red="96" green="255" blue="96" />
     </foreground_color>
     <format_type>0</format_type>
     <height>30</height>
@@ -1459,7 +1459,7 @@ $(pv_value)</tooltip>
     <name>Text Update_5</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>$(P)$(Q):STALL:RBV</pv_name>
+    <pv_name>$(P)$(Q)STALL:RBV</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -1479,7 +1479,7 @@ $(pv_value)</tooltip>
     <widget_type>Text Update</widget_type>
     <width>180</width>
     <wrap_words>false</wrap_words>
-    <wuid>712a0ba6:176b5a1ea7d:-78cb</wuid>
+    <wuid>712a0ba6176b5a1ea7d-78cb</wuid>
     <x>32</x>
     <y>235</y>
   </widget>
@@ -1519,7 +1519,7 @@ $(pv_value)</tooltip>
     <widget_type>Label</widget_type>
     <width>140</width>
     <wrap_words>false</wrap_words>
-    <wuid>712a0ba6:176b5a1ea7d:-78ca</wuid>
+    <wuid>712a0ba6176b5a1ea7d-78ca</wuid>
     <x>32</x>
     <y>216</y>
   </widget>
@@ -1543,7 +1543,7 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96" />
+      <color name="Monitor FG" red="96" green="255" blue="96" />
     </foreground_color>
     <format_type>0</format_type>
     <height>30</height>
@@ -1551,7 +1551,7 @@ $(pv_value)</tooltip>
     <name>Text Update_6</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>$(P)$(Q):TRIGIN:RBV</pv_name>
+    <pv_name>$(P)$(Q)TRIGIN:RBV</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -1571,7 +1571,7 @@ $(pv_value)</tooltip>
     <widget_type>Text Update</widget_type>
     <width>180</width>
     <wrap_words>false</wrap_words>
-    <wuid>712a0ba6:176b5a1ea7d:-78c3</wuid>
+    <wuid>712a0ba6176b5a1ea7d-78c3</wuid>
     <x>445</x>
     <y>170</y>
   </widget>
@@ -1611,7 +1611,7 @@ $(pv_value)</tooltip>
     <widget_type>Label</widget_type>
     <width>140</width>
     <wrap_words>false</wrap_words>
-    <wuid>712a0ba6:176b5a1ea7d:-78c2</wuid>
+    <wuid>712a0ba6176b5a1ea7d-78c2</wuid>
     <x>445</x>
     <y>151</y>
   </widget>
@@ -1635,7 +1635,7 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96" />
+      <color name="Monitor FG" red="96" green="255" blue="96" />
     </foreground_color>
     <format_type>0</format_type>
     <height>30</height>
@@ -1643,7 +1643,7 @@ $(pv_value)</tooltip>
     <name>Text Update_7</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>$(P)$(Q):DIRPORT:RBV</pv_name>
+    <pv_name>$(P)$(Q)DIRPORT:RBV</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -1663,7 +1663,7 @@ $(pv_value)</tooltip>
     <widget_type>Text Update</widget_type>
     <width>180</width>
     <wrap_words>false</wrap_words>
-    <wuid>712a0ba6:176b5a1ea7d:-78bb</wuid>
+    <wuid>712a0ba6176b5a1ea7d-78bb</wuid>
     <x>238</x>
     <y>235</y>
   </widget>
@@ -1703,7 +1703,7 @@ $(pv_value)</tooltip>
     <widget_type>Label</widget_type>
     <width>140</width>
     <wrap_words>false</wrap_words>
-    <wuid>712a0ba6:176b5a1ea7d:-78ba</wuid>
+    <wuid>712a0ba6176b5a1ea7d-78ba</wuid>
     <x>238</x>
     <y>216</y>
   </widget>
@@ -1727,7 +1727,7 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96" />
+      <color name="Monitor FG" red="96" green="255" blue="96" />
     </foreground_color>
     <format_type>0</format_type>
     <height>30</height>
@@ -1735,7 +1735,7 @@ $(pv_value)</tooltip>
     <name>Text Update_8</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>$(P)$(Q):TARGET:RBV</pv_name>
+    <pv_name>$(P)$(Q)TARGET:RBV</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -1755,7 +1755,7 @@ $(pv_value)</tooltip>
     <widget_type>Text Update</widget_type>
     <width>180</width>
     <wrap_words>false</wrap_words>
-    <wuid>712a0ba6:176b5a1ea7d:-78b3</wuid>
+    <wuid>712a0ba6176b5a1ea7d-78b3</wuid>
     <x>445</x>
     <y>235</y>
   </widget>
@@ -1795,7 +1795,7 @@ $(pv_value)</tooltip>
     <widget_type>Label</widget_type>
     <width>140</width>
     <wrap_words>false</wrap_words>
-    <wuid>712a0ba6:176b5a1ea7d:-78b2</wuid>
+    <wuid>712a0ba6176b5a1ea7d-78b2</wuid>
     <x>445</x>
     <y>216</y>
   </widget>
@@ -1826,13 +1826,13 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0" />
+      <color name="Text FG" red="0" green="0" blue="0" />
     </foreground_color>
     <height>30</height>
     <image></image>
     <name>auto(command|Withdraw)_1</name>
     <push_action_index>0</push_action_index>
-    <pv_name>$(P)$(Q):RRUN</pv_name>
+    <pv_name>$(P)$(Q)RRUN</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -1849,7 +1849,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
-    <wuid>29307158:176d3d5609e:-7cf7</wuid>
+    <wuid>29307158176d3d5609e-7cf7</wuid>
     <x>345</x>
     <y>359</y>
   </widget>
@@ -1880,13 +1880,13 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0" />
+      <color name="Text FG" red="0" green="0" blue="0" />
     </foreground_color>
     <height>30</height>
     <image></image>
     <name>auto(command|Infuse)_1</name>
     <push_action_index>0</push_action_index>
-    <pv_name>$(P)$(Q):RUN</pv_name>
+    <pv_name>$(P)$(Q)RUN</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -1903,7 +1903,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
-    <wuid>29307158:176d3d5609e:-7cf6</wuid>
+    <wuid>29307158176d3d5609e-7cf6</wuid>
     <x>187</x>
     <y>359</y>
   </widget>

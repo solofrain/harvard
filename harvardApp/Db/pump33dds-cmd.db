@@ -1,36 +1,34 @@
-record(bo, "$(P){$(Q)}:DISABLE") {
+record(bo, "$(P){$(Q)}DISABLE") {
   field(DESC, "Disable comms")
   field(PINI, "YES")
   field(VAL, "$(DISABLE=1)")
   field(OMSL, "supervisory")
   field(ZNAM, "Enabled")
   field(ONAM, "Disabled")
-  field(FLNK, "$(P)$(Q):POLLON")  
 }
 
 
-record(ao, "$(P){$(Q)}:CONDITION") {
+record(ao, "$(P){$(Q)}CONDITION") {
   field(DTYP, "stream")
-  field(OUT, "@pump33dds.proto setCond$(P), $(Q)) $(PORT)")
+  field(OUT, "@pump33dds.proto setCond($(P), $(Q)) $(PORT)")
   field(PREC, "0")
-  field(SDIS, "$(P){$(Q)}:DISABLE")
+  field(SDIS, "$(P){$(Q)}DISABLE")
 }
 
-record(ai, "$(P){$(Q)}:CONDITION:RBV-RAW") {
-  field(DESC, "Axis $(AX) $(CMD) readback")
+record(ai, "$(P){$(Q)}CONDITION:RBV-RAW") {
   field(DTYP, "stream")
   field(INP, "@pump33dds.proto getCond($(P), $(Q)) $(PORT)")
   field(PREC, "5")
-  field(SDIS, "$(P){$(Q)}:DISABLE")
+  field(SDIS, "$(P){$(Q)}DISABLE")
 }
 
-record(mbbi, "$(P){$(Q)}:CONDITION:RBV") {
+record(mbbi, "$(P){$(Q)}CONDITION:RBV") {
   field(ZRVL, "0")
   field(ZRST, "Twin")
   field(ONVL, "1")
   field(ONST, "Reciprocating")
   field(TWVL, "2")
   field(TWST, "Independent")
-  field(SDIS, "$(P){$(Q)}:DISABLE")
+  field(SDIS, "$(P){$(Q)}DISABLE")
 }
 
