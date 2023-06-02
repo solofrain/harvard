@@ -14,22 +14,29 @@ DBD += harvard.dbd
 
 # harvard.dbd will be made up from these files:
 harvard_DBD += base.dbd
+
+# Include dbd files from all support applications:
+harvard_DBD += busyRecord.dbd
 harvard_DBD += asyn.dbd
 harvard_DBD += calc.dbd
 harvard_DBD += stream.dbd
+#harvard_DBD += stream-calc.dbd
+harvard_DBD += drvAsynIPPort.dbd
 harvard_DBD += drvAsynSerialPort.dbd
-#harvard_DBD += devIocStats.dbd
-#harvard_DBD += iocAdmin.dbd
+harvard_DBD += system.dbd
+harvard_DBD += devIocStats.dbd
+harvard_DBD += asSupport.dbd
+harvard_DBD += caPutLog.dbd
 harvard_DBD += asSupport.dbd
 
-# Include dbd files from all support applications:
-#harvard_DBD += xxx.dbd
-
 # Add all the support libraries needed by this IOC
-harvard_LIBS += asyn calc
-harvard_LIBS += stream 
+harvard_LIBS += asyn
+harvard_LIBS += busy
+harvard_LIBS += calc
+harvard_LIBS += stream
+harvard_LIBS += devIocStats
 harvard_LIBS += autosave
-#harvard_LIBS += devIocStats
+harvard_LIBS += caPutLog
 
 # harvard_registerRecordDeviceDriver.cpp derives from harvard.dbd
 harvard_SRCS += harvard_registerRecordDeviceDriver.cpp

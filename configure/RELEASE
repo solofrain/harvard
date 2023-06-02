@@ -24,18 +24,16 @@
 # Variables and paths to dependent modules:
 #MODULES = /path/to/modules
 #MYMODULE = $(MODULES)/my-module
-SUPPORT=/home/liji/data/epics/base-R7.0.4.1/support
-
-ASYN=$(SUPPORT)/asyn-R4-41
-CALC=$(SUPPORT)/calc-R3-7-3
-STREAM=$(SUPPORT)/StreamDevice-2-8-9
-AUTOSAVE=$(SUPPORT)/autosave-R5-10
+ASYN = /usr/lib/epics
+STREAMDEVICE=/usr/lib/epics
+AUTOSAVE=/usr/lib/epics
+SUPPORT=/usr/lib/epics
 
 # If using the sequencer, point SNCSEQ at its top directory:
 #SNCSEQ = $(MODULES)/seq-ver
 
 # EPICS_BASE should appear last so earlier modules can override stuff:
-EPICS_BASE = /home/liji/data/epics/base-R7.0.4.1
+EPICS_BASE = /usr/lib/epics
 
 # Set RULES here if you want to use build rules from somewhere
 # other than EPICS_BASE:

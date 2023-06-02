@@ -1,0 +1,4 @@
+epicsEnvSet("ASYN", "/usr/lib/epics")
+epicsEnvSet("SUPPORT", "/usr/lib/epics")
+epicsEnvSet("HARVARD", "/epics/modules/harvard")
+

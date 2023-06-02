@@ -121,24 +121,24 @@ setRateMinMaxAx {
 #------------------------------------------
 getRateAx {
 	out "\$4 \$3";
-	in "\$3: %f %(\$1{\$2-Ax:\$3}\$4:RBV:EGU){pl/sec|pl/min|pl/hr|nl/sec|nl/min|nl/hr|ul/sec|ul/min|ul/hr|ml/sec|ml/min|ml/hr}\n%" $ax_status;
+	in "\$3: %f %(\$1{\$2-Ax:\$3}\$4:RBV:EGU){pl/sec|pl/min|pl/hr|nl/sec|nl/min|nl/hr|ul/sec|ul/min|ul/hr|ml/sec|ml/min|ml/hr}\n" $ax_status;
 #	@init { getRateAx; }
 }
 
 getRateMinAx {
 	out "\$4 \$3 lim";
-	#in "\$3: %f %(\$1{\$2-Ax:\$3}\$4:MIN:RBV:EGU){pl/sec|pl/min|pl/hr|nl/sec|nl/min|nl/hr|ul/sec|ul/min|ul/hr|ml/sec|ml/min|ml/hr} to %*f %*s\n%" $ax_status;
-	in "\$3: %f %(\$1{\$2-Ax:\$3}\$4:MIN:RBV:EGU){pl/sec|pl/min|pl/hr|nl/sec|nl/min|nl/hr|ul/sec|ul/min|ul/hr|ml/sec|ml/min|ml/hr} to %*f %6c\n%" $ax_status;
+	#in "\$3: %f %(\$1{\$2-Ax:\$3}\$4:MIN:RBV:EGU){pl/sec|pl/min|pl/hr|nl/sec|nl/min|nl/hr|ul/sec|ul/min|ul/hr|ml/sec|ml/min|ml/hr} to %*f %*s\n" $ax_status;
+	in "\$3: %f %(\$1{\$2-Ax:\$3}\$4:MIN:RBV:EGU){pl/sec|pl/min|pl/hr|nl/sec|nl/min|nl/hr|ul/sec|ul/min|ul/hr|ml/sec|ml/min|ml/hr} to %*f %6c\n" $ax_status;
         @mismatch {
-            in "\$3: %f %(\$1{\$2-Ax:\$3}\$4:MIN:RBV:EGU){pl/sec|pl/min|pl/hr|nl/sec|nl/min|nl/hr|ul/sec|ul/min|ul/hr|ml/sec|ml/min|ml/hr} to %*f %6c\n%" $ax_status;
+            in "\$3: %f %(\$1{\$2-Ax:\$3}\$4:MIN:RBV:EGU){pl/sec|pl/min|pl/hr|nl/sec|nl/min|nl/hr|ul/sec|ul/min|ul/hr|ml/sec|ml/min|ml/hr} to %*f %6c\n" $ax_status;
         }
 }
 
 getRateMaxAx {
-	#in "\$3: %*f %*s to %f %(\$1{\$2-Ax:\$3}\$4:MAX:RBV:EGU){pl/sec|pl/min|pl/hr|nl/sec|nl/min|nl/hr|ul/sec|ul/min|ul/hr|ml/sec|ml/min|ml/hr}\n%" $ax_status;
-	in "\$3: %*f %*6c to %f %(\$1{\$2-Ax:\$3}\$4:MAX:RBV:EGU){pl/sec|pl/min|pl/hr|nl/sec|nl/min|nl/hr|ul/sec|ul/min|ul/hr|ml/sec|ml/min|ml/hr}\n%" $ax_status;
+	#in "\$3: %*f %*s to %f %(\$1{\$2-Ax:\$3}\$4:MAX:RBV:EGU){pl/sec|pl/min|pl/hr|nl/sec|nl/min|nl/hr|ul/sec|ul/min|ul/hr|ml/sec|ml/min|ml/hr}\n" $ax_status;
+	in "\$3: %*f %*6c to %f %(\$1{\$2-Ax:\$3}\$4:MAX:RBV:EGU){pl/sec|pl/min|pl/hr|nl/sec|nl/min|nl/hr|ul/sec|ul/min|ul/hr|ml/sec|ml/min|ml/hr}\n" $ax_status;
 	@mismatch {
-            in "\$3: %*f %*5c to %f %(\$1{\$2-Ax:\$3}\$4:MAX:RBV:EGU){pl/sec|pl/min|pl/hr|nl/sec|nl/min|nl/hr|ul/sec|ul/min|ul/hr|ml/sec|ml/min|ml/hr}\n%" $ax_status;
+            in "\$3: %*f %*5c to %f %(\$1{\$2-Ax:\$3}\$4:MAX:RBV:EGU){pl/sec|pl/min|pl/hr|nl/sec|nl/min|nl/hr|ul/sec|ul/min|ul/hr|ml/sec|ml/min|ml/hr}\n" $ax_status;
         }
 }
 
@@ -169,13 +169,13 @@ getVolAx {
     out "\$4 \$3";
     in "\$3: %f %(\$1{\$2-Ax:\$3}\$4:RBV:EGU){pl|nl|ul|ml}\n" $ax_status;
     @mismatch {
-        in "A: %f %(\$1{\$2-Ax:A}\$4:RBV:EGU){pl|nl|ul|ml}\nB: %f %(\$1{\$2-Ax:B}\$4:RBV:EGU){pl|nl|ul|ml}\n%" $ax_status;
+        in "A: %f %(\$1{\$2-Ax:A}\$4:RBV:EGU){pl|nl|ul|ml}\nB: %f %(\$1{\$2-Ax:B}\$4:RBV:EGU){pl|nl|ul|ml}\n" $ax_status;
     }
 }
 
 getVol {
     out "\$3";
-    in "%f %(\$1{\$2}\$3:RBV:EGU){pl|nl|ul|ml}\n%" $ax_status;
+    in "%f %(\$1{\$2}\$3:RBV:EGU){pl|nl|ul|ml}\n" $ax_status;
 }
 
 

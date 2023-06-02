@@ -1,0 +1,14 @@
+syntax: glob
+bin/
+lib/
+db/
+dbd/
+O.Common/
+O.linux-x86_64/
+record*.dbl
+envPaths
+*.swp
+as/save/
+info_settings.*
+info_positions.*
+.hg
