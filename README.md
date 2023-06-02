@@ -14,4 +14,17 @@ Reference:
 - https://github.com/dls-controls/harvardSyringe
 - https://github.com/epics-modules/ip
 
-By: Ji Li <liji@bnl.gov>
+
+
+Connection:
+
+The pumps accept RS-232 connections, which can be created using MOXA
+terminal servers. Use MOXA standard RJ45-to-DB9 cables. You will need
+DB9 gender changers for PHD Ultra pumps and NULL MODEM adapters for
+Pump 33 DDS pumps.
+
+
+
+By:
+
+- Ji Li <liji@bnl.gov>
